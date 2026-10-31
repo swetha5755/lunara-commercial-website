@@ -1,0 +1,285 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fffaf7;
+    color: #493b40;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background-color: #f3e7e8;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #79546c;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #493b40;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #a46b87;
+}
+
+.cart a {
+    font-weight: bold;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 7%;
+    gap: 40px;
+    background-color: #f9eeee;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tagline {
+    color: #a46b87;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.15;
+    color: #65465b;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 480px;
+}
+
+.shop-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 28px;
+    background-color: #956b82;
+    color: white;
+    text-decoration: none;
+}
+
+.shop-button:hover {
+    background-color: #70475e;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+/* Categories */
+
+.categories,
+.products {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.categories h2,
+.products h2,
+.about h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #79546c;
+    margin-bottom: 12px;
+}
+
+.categories > p,
+.products > p {
+    margin-bottom: 35px;
+    color: #806f76;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    flex: 1 1 220px;
+    max-width: 330px;
+    background-color: #f5e8eb;
+    padding-bottom: 18px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    margin-top: 15px;
+    color: #79546c;
+}
+
+/* Products */
+
+.products {
+    background-color: #f8eff0;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    flex: 1 1 210px;
+    max-width: 270px;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 8px;
+    color: #79546c;
+}
+
+.product-card p {
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    padding: 10px 22px;
+    border: none;
+    background-color: #956b82;
+    color: white;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #70475e;
+}
+
+/* Special Offer */
+
+.offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 270px;
+    padding: 40px;
+    background-color: #e9d6dc;
+}
+
+.offer h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #70475e;
+    margin: 12px 0;
+}
+
+.offer a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #79546c;
+    color: white;
+    text-decoration: none;
+}
+
+/* About */
+
+.about {
+    padding: 70px 15%;
+    text-align: center;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #6c5a62;
+}
+
+/* Footer */
+
+footer {
+    padding: 40px 20px;
+    background-color: #65465b;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+}
