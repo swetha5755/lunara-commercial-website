@@ -1,9 +1,4 @@
 
-/* =================================
-   LUNARA - COMMERCIAL WEBSITE
-   HTML + CSS FLEXBOX
-================================= */
-
 /* GENERAL STYLING */
 
 * {
@@ -20,6 +15,17 @@ html {
 body {
     background-color: #fffaf7;
     color: #493b40;
+}
+
+/* ANNOUNCEMENT BAR */
+
+.announcement {
+    background-color: #65465b;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 /* NAVIGATION BAR */
@@ -120,7 +126,7 @@ body {
     object-fit: cover;
 }
 
-/* CATEGORIES SECTION */
+/* CATEGORIES */
 
 .categories,
 .products {
@@ -142,8 +148,6 @@ body {
     margin-bottom: 35px;
     color: #806f76;
 }
-
-/* CATEGORY FLEXBOX */
 
 .category-container {
     display: flex;
@@ -171,13 +175,11 @@ body {
     color: #79546c;
 }
 
-/* PRODUCTS SECTION */
+/* PRODUCTS */
 
 .products {
     background-color: #f8eff0;
 }
-
-/* PRODUCT FLEXBOX */
 
 .product-container {
     display: flex;
@@ -250,7 +252,7 @@ body {
     text-decoration: none;
 }
 
-/* ABOUT SECTION */
+/* ABOUT */
 
 .about {
     padding: 70px 15%;
@@ -261,6 +263,52 @@ body {
     font-size: 17px;
     line-height: 1.9;
     color: #6c5a62;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    padding: 55px 20px;
+    background-color: #f3e7e8;
+}
+
+.newsletter h2 {
+    font-family: Georgia, serif;
+    color: #79546c;
+    font-size: 32px;
+}
+
+.newsletter p {
+    max-width: 550px;
+    line-height: 1.7;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 13px;
+    width: 280px;
+    border: 1px solid #c9aab9;
+    background-color: white;
+}
+
+.newsletter button {
+    padding: 13px 22px;
+    border: none;
+    background-color: #79546c;
+    color: white;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -297,7 +345,7 @@ footer h2 {
     font-size: 13px;
 }
 
-/* RESPONSIVE DESIGN - TABLETS */
+/* RESPONSIVE TABLET DESIGN */
 
 @media (max-width: 768px) {
 
@@ -350,7 +398,7 @@ footer h2 {
     }
 }
 
-/* RESPONSIVE DESIGN - MOBILE */
+/* RESPONSIVE MOBILE DESIGN */
 
 @media (max-width: 480px) {
 
@@ -379,5 +427,17 @@ footer h2 {
 
     .navbar nav {
         gap: 12px;
+    }
+
+    .newsletter h2 {
+        font-size: 26px;
+    }
+
+    .newsletter form {
+        width: 100%;
+    }
+
+    .newsletter input {
+        width: 100%;
     }
 }
