@@ -1,5 +1,10 @@
 
-/* General Styling */
+/* =================================
+   LUNARA - COMMERCIAL WEBSITE
+   HTML + CSS FLEXBOX
+================================= */
+
+/* GENERAL STYLING */
 
 * {
     margin: 0;
@@ -17,7 +22,7 @@ body {
     color: #493b40;
 }
 
-/* Navigation Bar */
+/* NAVIGATION BAR */
 
 .navbar {
     display: flex;
@@ -37,6 +42,8 @@ body {
 
 .navbar nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 28px;
 }
 
@@ -54,7 +61,7 @@ body {
     font-weight: bold;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 
 .hero {
     display: flex;
@@ -113,7 +120,7 @@ body {
     object-fit: cover;
 }
 
-/* Categories */
+/* CATEGORIES SECTION */
 
 .categories,
 .products {
@@ -136,9 +143,12 @@ body {
     color: #806f76;
 }
 
+/* CATEGORY FLEXBOX */
+
 .category-container {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 25px;
     flex-wrap: wrap;
 }
@@ -161,11 +171,13 @@ body {
     color: #79546c;
 }
 
-/* Products */
+/* PRODUCTS SECTION */
 
 .products {
     background-color: #f8eff0;
 }
+
+/* PRODUCT FLEXBOX */
 
 .product-container {
     display: flex;
@@ -210,7 +222,7 @@ body {
     background-color: #70475e;
 }
 
-/* Special Offer */
+/* SPECIAL OFFER */
 
 .offer {
     display: flex;
@@ -238,7 +250,7 @@ body {
     text-decoration: none;
 }
 
-/* About */
+/* ABOUT SECTION */
 
 .about {
     padding: 70px 15%;
@@ -251,7 +263,7 @@ body {
     color: #6c5a62;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
     padding: 40px 20px;
@@ -269,6 +281,7 @@ footer h2 {
 .footer-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 25px;
     margin: 25px 0;
@@ -282,4 +295,89 @@ footer h2 {
 .copyright {
     margin-top: 25px;
     font-size: 13px;
+}
+
+/* RESPONSIVE DESIGN - TABLETS */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .category-container,
+    .product-container {
+        justify-content: center;
+    }
+
+    .category-card,
+    .product-card {
+        flex: 1 1 220px;
+    }
+
+    .about {
+        padding: 45px 8%;
+    }
+}
+
+/* RESPONSIVE DESIGN - MOBILE */
+
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .categories h2,
+    .products h2,
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .category-card,
+    .product-card {
+        flex-basis: 100%;
+    }
+
+    .offer h2 {
+        font-size: 32px;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
 }
